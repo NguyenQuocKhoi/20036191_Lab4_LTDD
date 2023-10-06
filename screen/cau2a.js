@@ -11,8 +11,29 @@ import {
   TextInput,
 } from "react-native";
 
-const Cau2a = () => {
+const data = [
+  {
+    userName: "khoi",
+    passWord: "123",
+  },
+  {
+    userName: "khoi1",
+    passWord: "123",
+  },
+];
 
+const Cau2a = () => {
+  const [errorLogin, setLogin] = useState("");
+  const [userName, setUserName] = useState("");
+  const [passWord, setPassWord] = useState("");
+  const checkLogin = (userName, passWord) => {
+    for (let i = 0; i < data.length; index++) {
+      if (data[i].userName == userName && data[i].passWord == passWord) {
+        return true;
+      }
+      return false;
+    }
+  };
   return (
     <View style={styles.container}>
       <Text style={styles.text1}>LOGIN</Text>
@@ -29,7 +50,8 @@ const Cau2a = () => {
             source={require("../assets/img/avatar_user 1.png")}
           ></Image>
           <TextInput
-            placeholder="  Name"
+            placeholder="  Name" onChangeText={(txt) => setUserName(txt)}
+            value={userName}
             style={{
               height: "54px",
               width: "330px",
@@ -48,7 +70,8 @@ const Cau2a = () => {
           ></Image>
 
           <TextInput
-            placeholder="   Password"
+            placeholder="   Password" onChangeText={(txt) => setPassWord(txt)}
+            value={passWord}
             style={{
               flex: 1,
               height: "54px",
@@ -60,20 +83,21 @@ const Cau2a = () => {
               height: "32px",
               width: "32px",
               marginTop: "10px",
-              marginRight: '10px'
+              marginRight: "10px",
             }}
             source={require("../assets/img/eye 1.png")}
           ></Image>
         </View>
       </View>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => checkLogin(userName, passWord)?
+      setLogin("success"): setLogin("error")}>
         <View style={styles.btnContainer}>
           <View style={styles.btn}>
             <Text style={styles.btnText}>LOGIN</Text>
           </View>
         </View>
       </TouchableOpacity>
-
+      <Text style={{ color:'rgba(6, 0, 0, 1)' , fontSize: 20, marginTop: '50px', marginLeft: '10px'}}>{errorLogin}</Text>
       <TouchableOpacity>
         <Text style={styles.text2}>Forgot your password</Text>
       </TouchableOpacity>
@@ -124,6 +148,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(6, 0, 0, 1)",
     justifyContent: "center",
     left: "30px",
+   
   },
   btnText: {
     fontFamily: "roboto",

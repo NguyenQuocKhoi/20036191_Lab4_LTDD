@@ -24,8 +24,20 @@ const Cau2b = () => {
           {"\n"}bluetooth
         </Text>
       </View>
+      <View style={styles.imgContainer}>
 
-      <Text style={styles.text2}>Cực kỳ hài lòng</Text>
+      <Text style={styles.text2}>Cực kỳ hài lòng</Text> 
+        <View style={styles.img}>
+        <Image source={require('../assets/img/star.png')} style={{height: '39px', width: '39px'}}></Image>
+        <Image source={require('../assets/img/star.png')} style={{height: '39px', width: '39px'}}></Image>
+        <Image source={require('../assets/img/star.png')} style={{height: '39px', width: '39px'}}></Image>
+        <Image source={require('../assets/img/star.png')} style={{height: '39px', width: '39px'}}></Image>
+        <Image source={require('../assets/img/star.png')} style={{height: '39px', width: '39px'}}></Image>
+      
+        </View>
+       
+      </View>
+      
       <TouchableOpacity>
         <View style={styles.btn1}>
           <Image
@@ -93,6 +105,8 @@ const styles = StyleSheet.create({
     lineHeight: "21.09px",
     fontFamily: "roboto",
     textAlign: "center",
+    marginTop: '20px',
+    marginBottom: '20px'
   },
 
   btn1: {
@@ -158,6 +172,17 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     color: 'rgba(255, 255, 255, 1)',
+  },
+
+  imgContainer:{
+    flex: 1,
+  },
+  img:{
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    marginLeft:'25px',
+    marginRight: '25px',
+    marginTop: '25px'
   }
 });
 export default Cau2b;

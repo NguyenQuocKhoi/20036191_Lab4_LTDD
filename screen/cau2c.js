@@ -37,7 +37,7 @@ const Cau2c = () => {
           </View>
 
           <View style={styles.input}>
-            <Text style={styles.text2}>Include upcase letters{"     "}</Text>
+            <Text style={styles.text2}>Include upcase letters{"      "}</Text>
             <CheckBox
               value={isSelected}
               onValueChange={setSelecion}
