@@ -23,7 +23,7 @@ const data = [
 ];
 
 const Cau2a = () => {
-  const [errorLogin, setLogin] = useState("");
+  const [login, setLogin] = useState("");
   const [userName, setUserName] = useState("");
   const [passWord, setPassWord] = useState("");
   const checkLogin = (userName, passWord) => {
@@ -50,7 +50,7 @@ const Cau2a = () => {
             source={require("../assets/img/avatar_user 1.png")}
           ></Image>
           <TextInput
-            placeholder="  Name" onChangeText={(txt) => setUserName(txt)}
+            placeholder="  Name" onChangeText={setUserName}
             value={userName}
             style={{
               height: "54px",
@@ -70,7 +70,7 @@ const Cau2a = () => {
           ></Image>
 
           <TextInput
-            placeholder="   Password" onChangeText={(txt) => setPassWord(txt)}
+            placeholder="   Password" onChangeText={setPassWord}
             value={passWord}
             style={{
               flex: 1,
@@ -97,7 +97,7 @@ const Cau2a = () => {
           </View>
         </View>
       </TouchableOpacity>
-      <Text style={{ color:'rgba(6, 0, 0, 1)' , fontSize: 20, marginTop: '50px', marginLeft: '10px'}}>{errorLogin}</Text>
+      <Text style={{ color:'rgba(6, 0, 0, 1)' , fontSize: 20, marginTop: '50px', marginLeft: '10px'}}>{login}</Text>
       <TouchableOpacity>
         <Text style={styles.text2}>Forgot your password</Text>
       </TouchableOpacity>

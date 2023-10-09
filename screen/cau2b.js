@@ -26,18 +26,32 @@ const Cau2b = () => {
       </View>
       <View style={styles.imgContainer}>
 
-      <Text style={styles.text2}>Cực kỳ hài lòng</Text> 
+        <Text style={styles.text2}>Cực kỳ hài lòng</Text>
         <View style={styles.img}>
-        <Image source={require('../assets/img/star.png')} style={{height: '39px', width: '39px'}}></Image>
-        <Image source={require('../assets/img/star.png')} style={{height: '39px', width: '39px'}}></Image>
-        <Image source={require('../assets/img/star.png')} style={{height: '39px', width: '39px'}}></Image>
-        <Image source={require('../assets/img/star.png')} style={{height: '39px', width: '39px'}}></Image>
-        <Image source={require('../assets/img/star.png')} style={{height: '39px', width: '39px'}}></Image>
-      
+          <Image
+            source={require("../assets/img/star.png")}
+            style={{ height: "39px", width: "39px" }}
+          ></Image>
+          <Image
+            source={require("../assets/img/star.png")}
+            style={{ height: "39px", width: "39px" }}
+          ></Image>
+          <Image
+            source={require("../assets/img/star.png")}
+            style={{ height: "39px", width: "39px" }}
+          ></Image>
+          <Image
+            source={require("../assets/img/star.png")}
+            style={{ height: "39px", width: "39px" }}
+          ></Image>
+          <Image
+            source={require("../assets/img/star.png")}
+            style={{ height: "39px", width: "39px" }}
+          ></Image>
         </View>
-       
+
       </View>
-      
+
       <TouchableOpacity>
         <View style={styles.btn1}>
           <Image
@@ -55,17 +69,16 @@ const Cau2b = () => {
           style={{
             color: "rgba(196, 196, 196, 1)",
             textAlign: "center",
-            marginLeft: "5px",
-           
+            marginLeft: "5px"
           }}
         ></TextInput>
         <TouchableOpacity>
-        <Text style={styles.text4}>https://meet.google.com/nsj-ojwi-xpp</Text>
+          <Text style={styles.text4}>https://meet.google.com/nsj-ojwi-xpp</Text>
         </TouchableOpacity>
       </View>
 
 
-      <TouchableOpacity> 
+      <TouchableOpacity>
         <View style={styles.btnContainer}>
           <View style={styles.btn}>
             <Text style={styles.text5}>Gửi</Text>
@@ -105,8 +118,8 @@ const styles = StyleSheet.create({
     lineHeight: "21.09px",
     fontFamily: "roboto",
     textAlign: "center",
-    marginTop: '20px',
-    marginBottom: '20px'
+    marginTop: "20px",
+    marginBottom: "20px",
   },
 
   btn1: {
@@ -138,51 +151,51 @@ const styles = StyleSheet.create({
     borderColor: "rgba(196, 196, 196, 1)",
     marginTop: "15px",
     alignSelf: "center",
-    flexDirection:'column',
-    justifyContent: 'space-between',
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
 
-  text4:{
-    fontFamily: 'roboto',
-    fontSize: '12px',
-    lineHeight: '14.06px',
-    fontWeight: 'bold',
-    marginLeft: '80px'
+  text4: {
+    fontFamily: "roboto",
+    fontSize: "12px",
+    lineHeight: "14.06px",
+    fontWeight: "bold",
+    marginLeft: "80px",
   },
 
-  btnContainer:{
-    flex:1,
-  },
-
-  btn:{
-    height: '41px',
-    width: '289px',
-    borderWidth: "1px",
-    borderRadius: "5px",
-    backgroundColor: 'rgba(21, 17, 235, 1)',
-    justifyContent: 'center',
-    alignSelf: 'center',
-    marginTop: '20px'
-  },
-
-  text5:{
-    fontFamily: 'roboto',
-    fontSize: '20px',
-    lineHeight: '23.44px',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: 'rgba(255, 255, 255, 1)',
-  },
-
-  imgContainer:{
+  btnContainer: {
     flex: 1,
   },
-  img:{
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    marginLeft:'25px',
-    marginRight: '25px',
-    marginTop: '25px'
-  }
+
+  btn: {
+    height: "41px",
+    width: "289px",
+    borderWidth: "1px",
+    borderRadius: "5px",
+    backgroundColor: "rgba(21, 17, 235, 1)",
+    justifyContent: "center",
+    alignSelf: "center",
+    marginTop: "20px",
+  },
+
+  text5: {
+    fontFamily: "roboto",
+    fontSize: "20px",
+    lineHeight: "23.44px",
+    fontWeight: "bold",
+    textAlign: "center",
+    color: "rgba(255, 255, 255, 1)",
+  },
+
+  imgContainer: {
+    flex: 1,
+  },
+  img: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    marginLeft: "25px",
+    marginRight: "25px",
+    marginTop: "25px",
+  },
 });
 export default Cau2b;
