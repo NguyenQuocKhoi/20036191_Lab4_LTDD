@@ -53,8 +53,8 @@ const Cau2c = () => {
       character += "!@#$%^&*()";
     }
     for (let i = 0; i < passwordLength; i++) {
-      password += characters.charAt(
-        Math.floor(Math.random() * characters.length)
+      passWord += character.charAt(
+        Math.floor(Math.random() * character.length)
       );
     }
     setPassWord(passWord);
